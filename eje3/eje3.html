@@ -36,6 +36,18 @@
                 <p v-else-if="enBodega > 0 && enBodega <=10">Tenemos poquitos</p>
                 <p v-else>Se termintaron</p>
             </div>
+
+            <div class="product-liga">
+                <p v-show="enBodega > 20">
+                    Stock con show
+                </p>
+            </div>
+
+            <div class="product-liga">
+                <p v-if="enBodega > 20">
+                    Stock con if
+                </p>
+            </div>
         
         </div>
     </div>
