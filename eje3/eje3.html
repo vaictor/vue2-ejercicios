@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="product">
+             
+            <div class="product-info">
+                <h1> El nombre del producto es: {{ producto }}</h1>
+            </div>
+
+            <div class="product-liga">
+                <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
+                <p v-if="siHay">Atáscate</p>
+                <p v-else>Lástima margarito 1</p>
+            </div>
+
+            <div class="product-liga">
+                
+                <p v-if="siHay">
+                    <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
+                </p>
+                <p v-else>Lástima margarito 2</p>
+            </div>
+
+            <div class="product-liga">
+                
+                <p v-if="enBodega > 20">
+                    <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar \ Existencia: {{enBodega}}</a>
+                </p>
+                <p v-else>Lástima margarito 3</p>
+            </div>
+
+        
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="eje3.js"></script>
+
+</body>
+</html>
