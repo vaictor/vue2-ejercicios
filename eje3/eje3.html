@@ -19,25 +19,23 @@
             <div class="product-liga">
                 <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
                 <p v-if="siHay">Atáscate</p>
-                <p v-else>Lástima margarito 1</p>
+                <p v-else>Lástima margarito</p>
             </div>
 
             <div class="product-liga">
-                
                 <p v-if="siHay">
                     <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
                 </p>
-                <p v-else>Lástima margarito 2</p>
+                <p v-else>No hay!</p>
             </div>
 
             <div class="product-liga">
-                
                 <p v-if="enBodega > 20">
                     <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar \ Existencia: {{enBodega}}</a>
                 </p>
-                <p v-else>Lástima margarito 3</p>
+                <p v-else-if="enBodega > 0 && enBodega <=10">Tenemos poquitos</p>
+                <p v-else>Se termintaron</p>
             </div>
-
         
         </div>
     </div>
