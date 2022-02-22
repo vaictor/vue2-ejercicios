@@ -5,7 +5,7 @@ var app = new Vue({
         producto: 'MAC book air',
         ligaProducto: 'comprar.php',
         titleLigaProducto: 'Comprame por favor!',
-        siHay: true,
-        enBodega: 30
+        siHay: false,
+        enBodega: 0
     }
 })

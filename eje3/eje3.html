@@ -11,43 +11,36 @@
     <div class="nav-bar"></div>
     <div id="app">
         <div class="product">
-             
-            <div class="product-info">
-                <h1> El nombre del producto es: {{ producto }}</h1>
-            </div>
-
-            <div class="product-liga">
-                <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
-                <p v-if="siHay">Atáscate</p>
-                <p v-else>Lástima margarito</p>
-            </div>
+ 
 
             <div class="product-liga">
                 <p v-if="siHay">
                     <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
                 </p>
-                <p v-else>No hay!</p>
+                <p v-else>No hay existencias!</p>
             </div>
 
             <div class="product-liga">
-                <p v-if="enBodega > 20">
-                    <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar \ Existencia: {{enBodega}}</a>
+                <p v-if="enBodega >= 20">
+                    <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar | Existencia: {{enBodega}}</a>
                 </p>
                 <p v-else-if="enBodega > 0 && enBodega <=10">Tenemos poquitos</p>
                 <p v-else>Se termintaron</p>
             </div>
 
-            <div class="product-liga">
-                <p v-show="enBodega > 20">
-                    Stock con show
-                </p>
-            </div>
 
             <div class="product-liga">
-                <p v-if="enBodega > 20">
-                    Stock con if
+                <p v-show="enBodega > 20">
+                    Hay 20 con show
                 </p>
             </div>
+            
+            <div class="product-liga">
+                <p v-if="enBodega > 20">
+                    Hay 20 con if
+                </p>
+            </div>
+          
         
         </div>
     </div>

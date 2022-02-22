@@ -13,19 +13,15 @@
         <div class="product">
             <div class="product-image">
                 <img v-bind:src="rutaLogo" />
-                <h1>{{ rutaLogo }}</h1>
+                <h1>La ruta de mi imágen es: {{ rutaLogo }}</h1>
             </div>
 
             <div class="product-liga">
                 <a v-bind:href="ligaProducto" v-bind:title="titleLigaProducto">Comprar </a>
-                <a href="ligaProducto">Comprar </a>
-                <a href="{{ ligaProducto }}">Comprar </a>
                 <h1>{{ligaProducto}}</h1>
             </div>
 
-            <div class="product-info">
-                <h1> El nombre del producto es: {{ producto }}</h1>
-            </div>
+     
         
         </div>
     </div>

@@ -4,7 +4,7 @@ var app = new Vue({
     data: {
         producto: 'MAC book air',
         rutaLogo: 'assets/educ-notificacion.png',
-        ligaProducto: 'comprar.php',
-        titleLigaProducto: 'Comprame por favor!'
+        ligaProducto: '/controlller/comprar.php',
+        titleLigaProducto: '¡Comprame por favor!'
     }
 })
