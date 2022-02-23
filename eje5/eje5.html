@@ -16,6 +16,7 @@
 
             <h1>Logos de educ</h1>
             <img v-bind:src="logoDefault" />
+            
             <ul>
                 <li v-for="logo in lstLogos" @mouseover="cambiarLogo(logo.rutaLogo)" >{{ logo.nombreLogo }}</li>
             </ul>
