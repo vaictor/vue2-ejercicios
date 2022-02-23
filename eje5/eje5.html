@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5</title>
+</head>
+<body>
+    <div id="parteReactivaVue">
+        <div class="product">
+ 
+            <h1>Listado de actividades (array) del producto: {{ producto }} UL LI</h1>
+            <button v-on:click="agregarHoras">Agregar horas</button>
+            <p>{{ numHoras }}</p>
+
+            <h1>Logos de educ</h1>
+            <img v-bind:src="logoDefault" />
+            <ul>
+                <li v-for="logo in lstLogos" @mouseover="cambiarLogo(logo.rutaLogo)" >{{ logo.nombreLogo }}</li>
+            </ul>
+
+
+            
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="eje5.js"></script>
+    
+</body>
+</html>

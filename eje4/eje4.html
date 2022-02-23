@@ -7,21 +7,33 @@
     <title>Ejercicio 4</title>
 </head>
 <body>
-    <div id="app">
+    <div id="parteReactivaVue">
         <div class="product">
  
-
-            <div class="product-liga">
+            <h1>Listado de actividades (array) del producto: {{ producto }} UL LI</h1>
+            <div class="listado-actividades">
                 <ul>
-                    <li v-for="material in materiales">{{ material.material }}</li> 
+                    <li v-for="actividad in actividades">{{ actividad }}</li> 
                 </ul>
-
             </div>
 
-           
 
-          
-        
+            <h1>Listado de materiales (json) del producto: {{ producto } UL LI</h1>
+            <div class="listado-materiales">
+                <ul>
+                    <li v-for="material in materiales" :key="material.id_material">{{ material.nombre_material }}</li> 
+                </ul>
+            </div>
+
+
+            <h1>Listado de materiales (json) del producto: {{ producto }} SELECT / COMBO</h1>
+            <div class="listado-materiales">
+                <select>
+                    <option v-for="material in materiales" :value="material.id_material"> {{ material.nombre_material}}</option>
+                </select>
+            </div>
+
+            
         </div>
     </div>
 
