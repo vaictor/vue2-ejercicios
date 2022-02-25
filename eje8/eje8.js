@@ -10,11 +10,5 @@ var app = new Vue({
             .then(response  => (this.caratulas = response.data.galerias))
     },
     methods:{
-        agregarAlumno: function (){
-            this.lstAlumnos.push({
-                nombreAlumno: this.nombreUsuario
-            })
-            
-        }
     }
 })
