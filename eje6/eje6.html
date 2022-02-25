@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6</title>
+</head>
+<body>
+
+    <div id="parteReactivaVue">
+        <h1>Usar v-text y v-model</h1>
+        <p>Bienvenido: {{nombreUsuario}}</p>
+        <p v-text="'Bienvenido:' + nombreUsuario"></p>
+        <p v-text="9 + 2"></p>
+
+
+        <input type="text" v-model="nombreUsuario">
+        <button v-on:click="agregarAlumno">Agregar</button>
+
+        
+
+        <ul>
+            <li v-for="alumno in lstAlumnos">{{alumno.nombreAlumno}}</li>
+        </ul>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <script src="eje6.js"></script>
+    
+</body>
+</html>
