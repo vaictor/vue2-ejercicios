@@ -3,6 +3,6 @@
     "vue-button-spinner": "^2.2.1"
   },
   "devDependencies": {
-    "cypress": "^10.0.3"
+    "cypress": "^9.7.0"
   }
 }
