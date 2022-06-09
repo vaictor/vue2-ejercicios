@@ -1,4 +1,4 @@
-# vue2-ejercicios
+# vue2 js  Ejercicios
 ## Ejercicio 1 | Instancia de Vue
 ## Ejercicio 2 | Bind de atributos
 ## Ejercicio 3 | Render de condiciones
