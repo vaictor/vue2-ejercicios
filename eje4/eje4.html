@@ -17,7 +17,6 @@
                 </ul>
             </div>
 
-
             <h1>Listado de materiales (json) del producto: {{ producto }} UL LI</h1>
             <div class="listado-materiales">
                 <ul>
@@ -25,14 +24,12 @@
                 </ul>
             </div>
 
-
             <h1>Listado de materiales (json) del producto: {{ producto }} SELECT / COMBO</h1>
             <div class="listado-materiales">
                 <select>
                     <option v-for="material in lstMateriales" :value="material.id_material"> {{ material.nombre_material}}</option>
                 </select>
             </div>
-
             
         </div>
     </div>
