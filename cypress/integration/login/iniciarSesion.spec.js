@@ -8,7 +8,7 @@ describe('Carga la plataforma educ', () => {
 
     it('Usuario: Visita la url del sitio de PRUEBAS educ', () => {
         
-        cy.visit('http://educ.ddns.net:88/index.demo')
+        cy.visit('http://educ.ddns.net:88/')
 
     })
 
